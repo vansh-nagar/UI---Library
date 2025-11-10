@@ -5,6 +5,7 @@
     {
       "type": "registry:file",
       "path": "components/pixel-perfect/1st-one.tsx",
+      "target": "components/pixel-perfect/1st-one.tsx",
       "content": "import React from 'react';\n\nconst StOne = () => {\n  return <div>StOne</div>;\n};\n\nexport default StOne;"
     }
   ]
