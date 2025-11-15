@@ -3,6 +3,22 @@
 
 @custom-variant dark (&:is(.dark *));
 
+:root {
+  --font-inter-tight: "Inter Tight", sans-serif;
+}
+
+html,
+body,
+#__next {
+  font-family: var(--font-inter-tight);
+  -webkit-font-smoothing: antialiased; /* makes it look smoother */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-pixelify {
+  font-family: var(--font-pixelify);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
