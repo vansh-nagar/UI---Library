@@ -1,8 +1,9 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { GithubIcon, Moon, Sun, TwitterIcon } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 const links = [
   {
@@ -31,13 +32,15 @@ const Navbar = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
   return (
-    <div className="  fixed top-0 inset-x-0 flex justify-between items-center px-10 py-4 font-pixelify bg-background/10  backdrop-blur-lg  z-50  ">
+    <div className="  fixed top-0 inset-x-0 flex justify-between items-center px-10 py-4 font-pixelify bg-background/10  border-b backdrop-blur-lg  z-50  ">
       <div className=" flex items-center gap-6">
-        <img
-          src="/logo/pixel-perfect.png"
-          alt="PIXEL PERFECT"
-          className="w-20 "
-        />
+        <Link href={"/"}>
+          <img
+            src="/logo/pixel-perfect.png"
+            alt="PIXEL PERFECT"
+            className="w-14 "
+          />
+        </Link>
         <div>
           {links.map((link) => (
             <a key={link.name} href={link.href} className="mx-4">
