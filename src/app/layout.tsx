@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   title: "Pixel Perfect",
   description:
     "A reusable UI component library built with React and TypeScript, providing customizable components for modern web applications.",
+  icons: {
+    icon: "/logo/pixel-perfect.png",
+  },
 };
 
 export default function RootLayout({

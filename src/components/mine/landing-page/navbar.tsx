@@ -31,7 +31,7 @@ const Navbar = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
   return (
-    <div className="  fixed top-0 inset-x-0 flex justify-between items-center px-10 py-4 font-pixelify bg-background z-50  ">
+    <div className="  fixed top-0 inset-x-0 flex justify-between items-center px-10 py-4 font-pixelify bg-background/10  backdrop-blur-lg  z-50  ">
       <div className=" flex items-center gap-6">
         <img
           src="/logo/pixel-perfect.png"
@@ -46,11 +46,11 @@ const Navbar = () => {
           ))}
         </div>
       </div>
-      <div className=" flex items-center gap-3">
+      <div className=" flex items-center gap-1">
         <Button variant="ghost" size="icon">
           <TwitterIcon size={16} />
         </Button>
-        <Button variant="ghost" size="icon">
+        <Button variant="ghost">
           <GithubIcon size={16} /> 1.1k
         </Button>
         <Button variant="ghost" size="icon" onClick={toggleTheme}>
