@@ -32,13 +32,18 @@ const Navbar = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
   return (
-    <div className="  fixed top-0 inset-x-0 flex justify-between items-center px-10 py-4 font-pixelify bg-background/10   backdrop-blur-lg  z-50  ">
+    <div className="  fixed top-0 inset-x-0 flex justify-between items-center px-10 py-4 font-pixelify bg-background z-50  ">
       <div className=" flex items-center gap-6">
         <Link href={"/"}>
           <img
-            src="/logo/pixel-perfect.png"
+            src="/logo/final-light.png"
             alt="PIXEL PERFECT"
-            className="w-14 "
+            className="w-10 dark:hidden block "
+          />
+          <img
+            src="/logo/final-dark.png"
+            alt="PIXEL PERFECT"
+            className="w-10 hidden dark:block "
           />
         </Link>
         <div>

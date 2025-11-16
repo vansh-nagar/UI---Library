@@ -127,7 +127,7 @@ body,
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
+  --background: #171717;
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -167,4 +167,22 @@ body,
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Hide all scrollbars (visual only) across browsers) */
+html,
+body,
+#__next,
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Chrome, Safari, Opera */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#__next::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
