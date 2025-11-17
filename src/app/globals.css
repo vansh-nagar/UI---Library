@@ -170,19 +170,12 @@ body,
 }
 
 /* Hide all scrollbars (visual only) across browsers) */
-html,
-body,
-#__next,
-* {
+.noScrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
 
-/* Chrome, Safari, Opera */
-html::-webkit-scrollbar,
-body::-webkit-scrollbar,
-#__next::-webkit-scrollbar,
-*::-webkit-scrollbar {
+.noScrollbar::-webkit-scrollbar {
   width: 0;
   height: 0;
 }

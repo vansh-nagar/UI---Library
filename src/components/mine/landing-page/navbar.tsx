@@ -18,6 +18,10 @@ const links = [
     name: "Pricing",
     href: "/pricing",
   },
+  {
+    name: "Playground",
+    href: "/playground",
+  },
 ];
 
 const Navbar = () => {
